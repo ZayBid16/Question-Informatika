@@ -1,7 +1,7 @@
 /* --- LOGIC - Abid's Quest Engine --- */
 
 const anniversaryDate = new Date(2024, 6, 17); // 17 Juli 2024
-const nomorWA = "628xxxxxxxxxx"; // GANTI NOMOR WA ABID
+const nomorWA = "+62 859-4259-3870"; // GANTI NOMOR WA ABID
 
 let musicStarted = false;
 let sadLevel = 0; // Menghitung berapa kali tombol 'Nggak' didekati
