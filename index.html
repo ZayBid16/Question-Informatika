@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abid's Valentine Quest! ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bgm" loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="main-wrapper">
+        <div class="game-container">
+            <div class="pixel-box">
+                <div class="pixel-header">❤️ ABID'S QUEST ❤️</div>
+                
+                <div id="status-bar">
+                    <div id="days-count">LOADING DAYS...</div>
+                    <div id="next-milestone">SCANNING MISSION...</div>
+                </div>
+
+                <div class="pixel-art-display">
+                    <div id="pixelEmoji">🐱</div>
+                </div>
+
+                <div class="dialog-box" id="mainDialog">
+                    <p id="dialogText">Abid: Halo Putik Ramadina, mau jadi Valentine aku nggak? ✨</p>
+                </div>
+
+                <div id="gallery-container" class="hidden">
+                    <div class="pixel-header" style="background: #ff4d6d;">OUR PRECIOUS MOMENTS</div>
+                    <div class="photo-grid">
+                        <img src="foto1.jpeg" alt="Memory 1" class="pixel-photo">
+                        <img src="foto2.jpeg" alt="Memory 2" class="pixel-photo">
+                        <img src="foto3.jpeg" alt="Memory 3" class="pixel-photo">
+                    </div>
+                </div>
+
+                <div id="secret-container" class="hidden">
+                    <div class="pixel-header" style="background: #4ade80; color: #000;">MESSAGE DECRYPTED</div>
+                    <p id="typewriterText"></p>
+                    <button id="waBtn" class="hidden" onclick="sendWhatsApp()" style="margin-top: 15px; background: #25D366; color: white; width: 100%;">
+                        KIRIM BALASAN KE ABID ❤️
+                    </button>
+                </div>
+
+                <div class="pixel-buttons" id="btnGroup">
+                    <button id="yesBtn" onclick="onYes()">MAU!</button>
+                    <button id="noBtn" onmouseover="runAway()" onclick="runAway()">NGGAK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
